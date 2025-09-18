@@ -1,0 +1,11 @@
+name: Call Reuseable workflow
+on:
+  workflow_dispatch:
+    inputs:
+      env:
+        type: string
+
+jobs:
+  build:
+    uses: binli-itg/first-repo/.github/workflows/reuse.yml@master
+    secrets: inherit
