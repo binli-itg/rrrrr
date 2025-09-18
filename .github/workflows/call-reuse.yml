@@ -7,7 +7,7 @@ on:
 
 jobs:
   call-reuse:
-    uses: binli-itg/first-repo/.github/workflows/reuse.yml@main
+    uses: binli-itg/first-repo/.github/workflows/reuse.yml@0dfd920ab1cfdab0cacf7a413ed1f9e675ab3187
     with:
       env: ${{github.event.inputs.env}}
     secrets: inherit
