@@ -6,6 +6,8 @@ on:
         type: string
 
 jobs:
-  build:
-    uses: binli-itg/first-repo/.github/workflows/reuse.yml@master
+  call-reuse:
+    uses: binli-itg/first-repo/.github/workflows/reuse.yml@main
+    with:
+      env: ${{github.event.inputs.env}}
     secrets: inherit
